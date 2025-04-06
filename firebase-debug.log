@@ -1,0 +1,57 @@
+[debug] [2025-04-06T16:05:20.546Z] ----------------------------------------------------------------------
+[debug] [2025-04-06T16:05:20.552Z] Command:       /usr/local/bin/node /Users/winithraks/Desktop/se2/225-github-actions-demo/node_modules/.bin/firebase emulators:start
+[debug] [2025-04-06T16:05:20.553Z] CLI Version:   14.1.0
+[debug] [2025-04-06T16:05:20.553Z] Platform:      darwin
+[debug] [2025-04-06T16:05:20.553Z] Node Version:  v22.13.0
+[debug] [2025-04-06T16:05:20.553Z] Time:          Sun Apr 06 2025 23:05:20 GMT+0700 (Indochina Time)
+[debug] [2025-04-06T16:05:20.553Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-06T16:05:20.641Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-06T16:05:20.642Z] > authorizing via signed-in user (6530375021@student.chula.ac.th)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2025-04-06T16:05:20.764Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-04-06T16:05:20.764Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-04-06T16:05:20.764Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":9999}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-04-06T16:05:20.767Z] [hub] writing locator at /var/folders/mc/s8jqj5vd4yj_02mndzf3mqp80000gn/T/hub-se2-cicd-b2ee6.json
+[debug] [2025-04-06T16:05:20.775Z] Checked if tokens are valid: true, expires at: 1743958470603
+[debug] [2025-04-06T16:05:20.775Z] Checked if tokens are valid: true, expires at: 1743958470603
+[debug] [2025-04-06T16:05:20.775Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/se2-cicd-b2ee6/sites 
+[debug] [2025-04-06T16:05:21.685Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/se2-cicd-b2ee6/sites 200
+[debug] [2025-04-06T16:05:21.685Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/se2-cicd-b2ee6/sites {"sites":[{"name":"projects/se2-cicd-b2ee6/sites/se2-cicd-b2ee6","defaultUrl":"https://se2-cicd-b2ee6.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-04-06T16:05:21.685Z] Checked if tokens are valid: true, expires at: 1743958470603
+[debug] [2025-04-06T16:05:21.685Z] Checked if tokens are valid: true, expires at: 1743958470603
+[debug] [2025-04-06T16:05:21.685Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/se2-cicd-b2ee6/webApps/-/config [none]
+[debug] [2025-04-06T16:05:22.690Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/se2-cicd-b2ee6/webApps/-/config 200
+[debug] [2025-04-06T16:05:22.690Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/se2-cicd-b2ee6/webApps/-/config {"projectId":"se2-cicd-b2ee6","storageBucket":"se2-cicd-b2ee6.firebasestorage.app","apiKey":"AIzaSyBh7NHMbw-CLy-kj03rjRGIryU0vMWmEoQ","authDomain":"se2-cicd-b2ee6.firebaseapp.com","messagingSenderId":"517910600188"}
+[debug] [2025-04-06T16:05:22.704Z] Checked if tokens are valid: true, expires at: 1743958470603
+[debug] [2025-04-06T16:05:22.704Z] Checked if tokens are valid: true, expires at: 1743958470603
+[debug] [2025-04-06T16:05:22.705Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/se2-cicd-b2ee6 [none]
+[debug] [2025-04-06T16:05:23.209Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/se2-cicd-b2ee6 200
+[debug] [2025-04-06T16:05:23.209Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/se2-cicd-b2ee6 {"projectId":"se2-cicd-b2ee6","projectNumber":"517910600188","displayName":"se2-CICD","name":"projects/se2-cicd-b2ee6","resources":{"hostingSite":"se2-cicd-b2ee6"},"state":"ACTIVE","etag":"1_8a247473-e524-4a6d-a793-a340b3375139"}
+[info] i  hosting[se2-cicd-b2ee6]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[se2-cicd-b2ee6]: Local server: http://127.0.0.1:9999 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:9999\u001b[22m\u001b[24m"}}
+[warn] ⚠  emulators: The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[debug] [2025-04-06T16:05:23.243Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:9999 │
+└──────────┴────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [06/Apr/2025:16:05:30 +0000] "GET / HTTP/1.1" 200 371 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Apr/2025:16:05:30 +0000] \"GET / HTTP/1.1\" 200 371 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [06/Apr/2025:16:05:30 +0000] "GET /bundle.js HTTP/1.1" 200 - "http://127.0.0.1:9999/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Apr/2025:16:05:30 +0000] \"GET /bundle.js HTTP/1.1\" 200 - \"http://127.0.0.1:9999/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [06/Apr/2025:16:05:30 +0000] "GET /pug.jpg HTTP/1.1" 200 770433 "http://127.0.0.1:9999/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Apr/2025:16:05:30 +0000] \"GET /pug.jpg HTTP/1.1\" 200 770433 \"http://127.0.0.1:9999/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [06/Apr/2025:16:05:31 +0000] "GET /favicon.ico HTTP/1.1" 404 - "http://127.0.0.1:9999/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Apr/2025:16:05:31 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"http://127.0.0.1:9999/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [06/Apr/2025:16:05:41 +0000] "GET / HTTP/1.1" 200 371 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Apr/2025:16:05:41 +0000] \"GET / HTTP/1.1\" 200 371 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [06/Apr/2025:16:05:41 +0000] "GET /bundle.js HTTP/1.1" 200 - "http://localhost:9999/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Apr/2025:16:05:41 +0000] \"GET /bundle.js HTTP/1.1\" 200 - \"http://localhost:9999/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [06/Apr/2025:16:05:41 +0000] "GET /pug.jpg HTTP/1.1" 200 770433 "http://localhost:9999/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Apr/2025:16:05:41 +0000] \"GET /pug.jpg HTTP/1.1\" 200 770433 \"http://localhost:9999/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [06/Apr/2025:16:05:41 +0000] "GET /favicon.ico HTTP/1.1" 404 - "http://localhost:9999/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Apr/2025:16:05:41 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"http://localhost:9999/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0\""}}
